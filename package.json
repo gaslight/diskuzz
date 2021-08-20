@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "test": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start:build": "npm run build && web-dev-server --root-dir dist --app-index index.html --open --compatibility none",
+    "start": "web-dev-server"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "@open-wc/testing": "^2.5.33",
+    "@web/dev-server": "^0.1.21",
+    "@web/test-runner": "^0.12.20",
+    "@web/test-runner-playwright": "^0.8.7",
+    "deepmerge": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.56.2"
+  },
+  "name": "dis-kuzz",
+  "version": "0.0.0",
+  "description": "Webcomponent dis-kuzz following open-wc recommendations",
+  "author": "dis-kuzz",
+  "license": "MIT",
+  "dependencies": {
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1",
+    "phoenix": "^1.5.10"
+  }
+}
